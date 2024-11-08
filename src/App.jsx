@@ -1,12 +1,16 @@
 import { useState } from 'react'
+import Nav from './component/Nav'
+import { Main } from './component/Main'
+import { Sidebar } from './component/Sidebar'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <h1>Hello World !!</h1>
+    <Nav />
+    <div className="wrapper">
+    <Main />
+    </div>
     </>
   )
 }

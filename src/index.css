@@ -10,5 +10,55 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+}
+.main{
+  display: flex;
+  padding: 35px;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.sidebar{
+  padding: 10px;
+  width: 30%;
+}
+.sidebar .cart{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+  width: 450px;
+  background-color: #eee;
+  margin-top: 25px;
+  align-items: flex-start; 
+}
 
+.card {
+    flex: 1 1 calc(33.33% - 20px); /* 33.33% width with gap adjustment */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
 
+.btn{
+  padding: 10px;
+  border: 1px solid #111;
+  border-radius: 10px;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+}
+ul.cartlist li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
