@@ -26,7 +26,7 @@ body{
 }
 .sidebar{
   padding: 10px;
-  width: 30%;
+  width: 35%;
 }
 .sidebar .cart{
   display: flex;
@@ -35,10 +35,18 @@ body{
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0);
-  width: 450px;
+  width: auto;
   background-color: #eee;
   margin-top: 25px;
   align-items: flex-start; 
+    transition: all 0.3s ease;
+}
+
+.fixed {
+  position: fixed;
+  top: 0; 
+  right: 0;
+
 }
 
 .card {
@@ -48,6 +56,8 @@ body{
     background-color: #f0f0f0;
     text-align: center;
 }
+
+
 
 .btn{
   padding: 10px;
@@ -61,4 +71,12 @@ ul.cartlist li {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.btn{
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #111;
+  text-align: center;
+  border: none;
 }
